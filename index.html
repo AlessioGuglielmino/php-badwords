@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP-BADWORDS</title>
+
+    <!-- FOGLIO DI STILE CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- CDN BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-5">Censura una parola</h1>
+
+      <form action="censor.php" method="GET" class="mt-5">
+        <div class="mb-3">
+          <label for="badword" class="form-label">BadWord</label>
+          <input
+            type="text"
+            class="form-control"
+            id="badword"
+            name="badword"
+            placeholder="inserisci una badword"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="paragraph" class="form-label">Example textarea</label>
+          <textarea
+            class="form-control"
+            id="paragraph"
+            name="paragraph"
+            rows="3"
+          >
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptate quaerat doloribus minima sunt alias voluptates necessitatibus, libero accusantium fugit omnis doloremque ad repellendus quo corporis placeat nostrum deserunt temporibus!</textarea
+          >
+        </div>
+
+        <button class="btn btn-primary">invia</button>
+      </form>
+    </div>
+  </body>
+</html>
